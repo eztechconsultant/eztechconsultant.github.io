@@ -22,7 +22,7 @@ enableRobotsTXT = true
 ## Site Settings
 [params]
 author = "EZ Tech Consultants"
-intro = "[info@eztechconsultants.com](mailto:info@eztechconsultants.com)"
+intro = "IT Managed Services Provider"
 description = "Computers | Mobile Devices | Office 365 | Google Workspace | <br/> Okta | Jamf | Intune"
 authorimage = ""
 dateformat = "Jan 2, 2006"
