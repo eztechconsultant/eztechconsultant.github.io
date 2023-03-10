@@ -1,6 +1,7 @@
 ## Basic Configuration
 
-baseurl = "https://eztechconsultants.com"
+baseurl = "https://eztechconsultant.github.io
+#baseurl = "https://eztechconsultants.com"
 builddrafts = false
 canonifyurls = true
 languageCode = "en-US"
