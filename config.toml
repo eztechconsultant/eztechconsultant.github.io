@@ -22,15 +22,15 @@ enableRobotsTXT = true
 ## Site Settings
 [params]
 author = "EZ Tech Consultants"
-intro = "Managed Services Provider"
+intro = "E-Mail To Get Started! </br> info@eztechconsultants.com"
 description = "Computers | Mobile Devices | Office 365 | Google Workspace | <br/> Okta | Jamf | Intune"
 authorimage = ""
 dateformat = "Jan 2, 2006"
 
 ## Site Meta Settings
 [params.meta]
-description = "Simple minimalist theme"
-keywords = "minimalist,blog,goa,hugo,developer"
+description = "EZ Tech Consultants"
+keywords = "msp,intune,jamf,dlp,o365,okta,google,workspace,azure"
 
 ## Social Accounts
 [params.social]
