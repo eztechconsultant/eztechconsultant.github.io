@@ -2,7 +2,7 @@
 
 baseurl = "https://eztechconsultants.com"
 builddrafts = false
-canonifyurls = false
+canonifyurls = true
 languageCode = "en-US"
 
 contentdir = "content"
