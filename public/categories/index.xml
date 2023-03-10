@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on EZ Tech Consultants</title>
+    <link>https://eztechconsultants.com/categories/</link>
+    <description>Recent content in Categories on EZ Tech Consultants</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 03 Oct 2016 16:59:13 -0400</lastBuildDate><atom:link href="https://eztechconsultants.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>propaganda</title>
+      <link>https://eztechconsultants.com/categories/propaganda/</link>
+      <pubDate>Mon, 03 Oct 2016 16:59:13 -0400</pubDate>
+      
+      <guid>https://eztechconsultants.com/categories/propaganda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>https://eztechconsultants.com/categories/about/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://eztechconsultants.com/categories/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>articles</title>
+      <link>https://eztechconsultants.com/categories/articles/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://eztechconsultants.com/categories/articles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ad</title>
+      <link>https://eztechconsultants.com/categories/ad/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>https://eztechconsultants.com/categories/ad/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
