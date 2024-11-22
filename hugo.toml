@@ -1,0 +1,33 @@
+baseURL = 'https://eztechconsultants.com/'
+languageCode = 'en-us'
+title = 'EZ Tech Consultants'
+theme = 'eztechconsultants'
+
+[params]
+  description = "Boutique Managed Service Provider for Small to Medium Businesses"
+  author = "Lenny"
+  logo = "/images/logo.png"
+
+[menu]
+  [[menu.main]]
+    identifier = "services"
+    name = "Services"
+    url = "/services/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

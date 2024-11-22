@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}{{ with .Title }} - {{ . }}{{ end }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans leading-normal tracking-normal">
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="/" class="flex items-center">
+                <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }} Logo" class="h-12 mr-4">
+                <h1 class="text-2xl font-bold">{{ .Site.Title }}</h1>
+            </a>
+            <nav>
+                <ul class="flex space-x-4">
+                    {{ range .Site.Menus.main }}
+                        <li><a href="{{ .URL }}" class="hover:text-blue-200">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; {{ now.Year }} EZ Tech Consultants. All Rights Reserved.</p>
+            <p>Boutique MSP Serving Small to Medium Businesses</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

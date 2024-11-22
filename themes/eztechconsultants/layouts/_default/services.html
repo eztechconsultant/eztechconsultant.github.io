@@ -1,0 +1,54 @@
+{{ define "main" }}
+<div class="services-page container mx-auto py-12">
+    <div class="max-w-4xl mx-auto">
+        {{ .Content }}
+        
+        <div class="grid md:grid-cols-2 gap-8 mt-12">
+            <div class="service-card bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600">IT Infrastructure Management</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Network design and implementation</li>
+                    <li>Server setup and maintenance</li>
+                    <li>Hardware procurement and lifecycle management</li>
+                </ul>
+            </div>
+            
+            <div class="service-card bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600">Cybersecurity</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Threat detection and prevention</li>
+                    <li>Security audits</li>
+                    <li>Compliance consulting</li>
+                    <li>Employee security training</li>
+                </ul>
+            </div>
+            
+            <div class="service-card bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600">Cloud Solutions</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Cloud migration strategies</li>
+                    <li>Multi-cloud management</li>
+                    <li>Backup and disaster recovery</li>
+                    <li>Cloud security optimization</li>
+                </ul>
+            </div>
+            
+            <div class="service-card bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4 text-blue-600">Helpdesk & Support</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>24/7 technical support</li>
+                    <li>Remote and on-site troubleshooting</li>
+                    <li>Proactive system monitoring</li>
+                    <li>Quick response times</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="cta bg-blue-600 text-white p-8 rounded-lg mt-12 text-center">
+            <h2 class="text-2xl font-bold mb-4">Ready to Transform Your IT?</h2>
+            <p class="mb-6">Let's discuss how we can optimize your technology infrastructure.</p>
+            <a href="/contact" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-blue-100 transition">Contact Us</a>
+        </div>
+    </div>
+</div>
+{{ end }}

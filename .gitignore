@@ -1,0 +1,30 @@
+# Hugo default output directory
+/public/
+
+# Node modules
+node_modules/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Hugo resource directory
+resources/_gen/
+.hugo_build.lock
+
+# Local Netlify folder
+.netlify
+
+# Environment variables
+.env
+.env.*
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build files
+dist/
