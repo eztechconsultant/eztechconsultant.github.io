@@ -1,7 +1,6 @@
 ---
 title: "Thank You"
 layout: "thank-you"
-date: 2024-01-01
 draft: false
 noindex: true
 ---
