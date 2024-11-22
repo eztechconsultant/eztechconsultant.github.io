@@ -4,38 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Site.Title }}{{ with .Title }} - {{ . }}{{ end }}</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="{{ "images/favicon.svg" | relURL }}">
 </head>
 <body class="bg-gray-100 text-gray-900 font-sans leading-normal tracking-normal">
-    <header class="bg-blue-600 text-white py-4">
-        <div class="container mx-auto flex justify-between items-center px-4">
+    <header class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 shadow-lg relative">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
+            <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+        </div>
+        <div class="container mx-auto flex justify-between items-center px-4 py-2 relative">
             <a href="/" class="flex items-center">
-                <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }} Logo" class="h-12 mr-4">
-                <h1 class="text-2xl font-bold">{{ .Site.Title }}</h1>
+                <img src="{{ "images/logo.svg" | relURL }}" alt="{{ .Site.Title }} Logo" class="h-12 w-12">
             </a>
-            <nav>
-                <ul class="flex space-x-4">
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white hover:text-blue-300">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
                     {{ range .Site.Menus.main }}
-                        <li><a href="{{ .URL }}" class="hover:text-blue-200">{{ .Name }}</a></li>
+                        <li><a href="{{ .URL }}" class="text-white hover:text-blue-300 transition font-medium text-sm">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-gray-900 md:hidden">
+                <ul class="px-4 py-2">
+                    {{ range .Site.Menus.main }}
+                        <li class="py-2"><a href="{{ .URL }}" class="text-white hover:text-blue-300 transition font-medium block">{{ .Name }}</a></li>
                     {{ end }}
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
+    <main class="min-h-screen">
         {{ block "main" . }}{{ end }}
     </main>
 
     <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto text-center">
+        <div class="container mx-auto text-center px-4">
             <p>&copy; {{ now.Year }} EZ Tech Consultants. All Rights Reserved.</p>
-            <p>Boutique MSP Serving Small to Medium Businesses</p>
         </div>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+    <script src="{{ "js/main.js" | relURL }}"></script>
 </body>
 </html>

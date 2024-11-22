@@ -1,54 +1,207 @@
 {{ define "main" }}
-<div class="services-page container mx-auto py-12">
-    <div class="max-w-4xl mx-auto">
-        {{ .Content }}
-        
-        <div class="grid md:grid-cols-2 gap-8 mt-12">
-            <div class="service-card bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold mb-4 text-blue-600">IT Infrastructure Management</h3>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Network design and implementation</li>
-                    <li>Server setup and maintenance</li>
-                    <li>Hardware procurement and lifecycle management</li>
+<div class="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-12 md:py-16 relative overflow-hidden">
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-blue-400/20 via-transparent to-transparent"></div>
+    </div>
+    <div class="container mx-auto px-4 relative">
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h1>
+        <p class="text-lg md:text-xl">Comprehensive IT Solutions for Your Business</p>
+    </div>
+</div>
+
+<div class="container mx-auto px-4 py-12">
+    <!-- IT Infrastructure Management -->
+    <div class="mb-16">
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold text-blue-600 mb-4">IT Infrastructure Management</h2>
+                <p class="text-gray-600 mb-6">Our comprehensive IT infrastructure management services ensure your business operates smoothly and efficiently. We handle:</p>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Network design, implementation, and maintenance</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Server management and optimization</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>24/7 monitoring and maintenance</span>
+                    </li>
                 </ul>
             </div>
-            
-            <div class="service-card bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold mb-4 text-blue-600">Cybersecurity</h3>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Threat detection and prevention</li>
-                    <li>Security audits</li>
-                    <li>Compliance consulting</li>
-                    <li>Employee security training</li>
-                </ul>
-            </div>
-            
-            <div class="service-card bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold mb-4 text-blue-600">Cloud Solutions</h3>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Cloud migration strategies</li>
-                    <li>Multi-cloud management</li>
-                    <li>Backup and disaster recovery</li>
-                    <li>Cloud security optimization</li>
-                </ul>
-            </div>
-            
-            <div class="service-card bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold mb-4 text-blue-600">Helpdesk & Support</h3>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>24/7 technical support</li>
-                    <li>Remote and on-site troubleshooting</li>
-                    <li>Proactive system monitoring</li>
-                    <li>Quick response times</li>
-                </ul>
+            <div class="w-full md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1520869562399-e772f042f422?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="IT Infrastructure" 
+                     class="rounded-lg shadow-xl w-full">
             </div>
         </div>
-        
-        <div class="cta bg-blue-600 text-white p-8 rounded-lg mt-12 text-center">
-            <h2 class="text-2xl font-bold mb-4">Ready to Transform Your IT?</h2>
-            <p class="mb-6">Let's discuss how we can optimize your technology infrastructure.</p>
-            <a href="/contact" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-blue-100 transition">Contact Us</a>
+    </div>
+
+    <!-- Cybersecurity Solutions -->
+    <div class="mb-16">
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold text-blue-600 mb-4">Cybersecurity Solutions</h2>
+                <p class="text-gray-600 mb-6">Protect your business with our comprehensive cybersecurity services:</p>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Advanced threat detection and prevention</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Regular security audits and updates</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Employee security training and awareness</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Cybersecurity" 
+                     class="rounded-lg shadow-xl w-full">
+            </div>
         </div>
+    </div>
+
+    <!-- Cloud Solutions -->
+    <div class="mb-16">
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold text-blue-600 mb-4">Cloud Solutions</h2>
+                <p class="text-gray-600 mb-6">Transform your business with our cloud services:</p>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Cloud migration and implementation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Hybrid cloud solutions</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Cloud security and optimization</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Cloud Solutions" 
+                     class="rounded-lg shadow-xl w-full">
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Desk Support -->
+    <div class="mb-16">
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold text-blue-600 mb-4">Help Desk Support</h2>
+                <p class="text-gray-600 mb-6">Reliable technical support when you need it:</p>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>24/7 technical support</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Remote and on-site assistance</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Proactive issue resolution</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Help Desk Support" 
+                     class="rounded-lg shadow-xl w-full">
+            </div>
+        </div>
+    </div>
+<!-- Logistics and Asset Management -->
+<div class="mb-16">
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div class="w-full md:w-1/2">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">Logistics & Asset Management</h2>
+            <p class="text-gray-600 mb-6">Complete end-to-end employee lifecycle and asset management solutions:</p>
+            <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Employee onboarding/offboarding automation</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Device procurement and configuration</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Nationwide shipping and asset tracking</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Asset lifecycle management and inventory control</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>Secure data wiping and device recycling</span>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full md:w-1/2">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                 alt="Logistics and Asset Management" 
+                 class="rounded-lg shadow-xl w-full">
+        </div>
+    </div>
+</div>
+    <!-- CTA Section -->
+    <div class="bg-gray-50 rounded-xl p-8 md:p-12 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Ready to Transform Your IT Infrastructure?</h2>
+        <p class="text-gray-600 mb-8">Contact us today to discuss how we can help optimize your business technology.</p>
+        <a href="/contact" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-colors shadow-lg">
+            Get Started
+        </a>
     </div>
 </div>
 {{ end }}

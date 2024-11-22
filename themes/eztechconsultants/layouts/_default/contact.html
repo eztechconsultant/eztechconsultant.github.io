@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="contact-page container mx-auto py-12">
+    <div class="max-w-4xl mx-auto">
+        <div class="prose max-w-none mb-8">
+            {{ .Content }}
+        </div>
+        
+        {{ partial "contact-form" . }}
+    </div>
+</div>
+{{ end }}
