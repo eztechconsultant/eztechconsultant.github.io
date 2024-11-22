@@ -1,6 +1,25 @@
-# EZ Tech Consultants Website
+# EZ Tech Consultants
 
-Modern website for EZ Tech Consultants, a boutique MSP serving small to medium businesses.
+Professional website for EZ Tech Consultants - Your Trusted IT Partner.
+
+## Overview
+
+Modern, responsive website built with Hugo and hosted on Cloudflare Pages.
+
+## Features
+
+- Responsive Design
+- Mobile-First Approach
+- Fast Loading
+- Contact Form Integration
+- SEO Optimized
+
+## Technology Stack
+
+- Hugo Static Site Generator
+- Tailwind CSS
+- Cloudflare Pages
+- Modern JavaScript
 
 ## Local Development
 
@@ -25,14 +44,6 @@ The site will be available at `http://localhost:1313/`
 ## Deployment
 
 The site is automatically deployed to Cloudflare Pages when changes are pushed to the main branch.
-
-### Setup Cloudflare Pages
-
-1. Create a new project in Cloudflare Pages
-2. Connect your GitHub repository
-3. Add the following environment variables in GitHub Secrets:
-   - `CLOUDFLARE_API_TOKEN`
-   - `CLOUDFLARE_ACCOUNT_ID`
 
 ## Content Management
 
